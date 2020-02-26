@@ -1,0 +1,9 @@
+{
+	"git.ignoreLimitWarning": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"emmet.includeLanguages": {
+		"javascript": "html"
+	},
+	"auto-rename-tag.activationOnLanguage": ["html"]
+}
