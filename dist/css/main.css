@@ -20,7 +20,7 @@
 	width: 35%;
 	border-radius: 5px;
 	padding: 5px 0.4rem;
-	box-shadow: 1px 2px 5px var(--primary-color);
+	box-shadow: 0px 1px 3px 0px var(--shadow-color);
 }
 
 .logo {
@@ -35,9 +35,10 @@
 }
 
 .nav-link {
-	box-shadow: 1px 2px 5px var(--primary-color);
+	box-shadow: 0px 1px 3px 0px var(--shadow-color);
 	margin: 5px 0;
 	border-radius: 5px;
+	padding: 5px 0;
 	font-size: 12px;
 	width: 60%;
 	display: flex;
@@ -59,24 +60,13 @@
 
 /* Landing Page Styling */
 .landing {
-	margin: 5rem 0;
+	margin: 20% 0 0;
+	display: flex;
 }
 
 .land-action {
 	width: 50%;
 	margin: 1rem 0;
-}
-
-.land-service {
-	margin: 1rem auto;
-	display: flex;
-	justify-content: space-between;
-}
-
-.service {
-	box-shadow: 1px 2px 5px var(--primary-color);
-	padding: 1rem 0.5rem;
-	width: 30%;
 }
 
 /* Profile Styling */
@@ -185,17 +175,17 @@
 	padding: 1rem 0.5rem;
 	margin: 10px 10px;
 	width: 150px;
-	box-shadow: 1px 2px 5px var(--primary-color);
 	border-radius: 5px;
 	text-align: center;
 }
 
 .pro-skill .skill-item:hover {
-	box-shadow: 1px 4px 8px var(--primary-color);
+	box-shadow: 0px 1px 5px 0px var(--shadow-color);
+	/* box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3); */
 }
 
 .pro-skill .skill-item i {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -205,26 +195,16 @@
 	}
 
 	.landing {
-		margin-top: 8rem;
-	}
-
-	.land-service {
-		flex-direction: column;
-		width: 90%;
-	}
-
-	.service {
-		width: 100%;
-		margin: 0 0 2rem;
+		margin: 50% 0 0;
 	}
 
 	.profile {
-		margin: 40% 0 2rem;
+		margin: 50% 0 2rem;
 		flex-direction: column;
 	}
 
 	.pro-skills {
-		margin: 40% 0 2rem;
+		margin: 60% 0 2rem;
 	}
 
 	.pro-skill .skill-item {
