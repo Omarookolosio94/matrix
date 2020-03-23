@@ -2,7 +2,7 @@
 	"name": "matrix",
 	"version": "1.0.0",
 	"description": "Portfolio React site Template",
-	"homepage": "https://omarookolosio94.github.io/ariere",
+	"homepage": "https://omarookolosio94.github.io/matrix",
 	"main": "index.js",
 	"scripts": {
 		"deploy": "gh-pages -d dist"
