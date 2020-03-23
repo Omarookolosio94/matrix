@@ -10,7 +10,6 @@
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--secondary-color);
 }
 
 .logo-bar {
@@ -21,10 +20,12 @@
 	border-radius: 5px;
 	padding: 5px 0.4rem;
 	box-shadow: 0px 1px 3px 0px var(--shadow-color);
+	background-color: var(--secondary-color);
 }
 
-.logo {
-	padding: 5px 0;
+.logo,
+.logo-link {
+	padding: 5px 0.4rem;
 }
 
 .logo img {
@@ -35,14 +36,16 @@
 }
 
 .nav-link {
+	background-color: var(--secondary-color);
 	box-shadow: 0px 1px 3px 0px var(--shadow-color);
 	margin: 5px 0;
 	border-radius: 5px;
-	padding: 5px 0;
+	padding: 5px 0.4rem;
 	font-size: 12px;
 	width: 60%;
 	display: flex;
 	justify-content: space-between;
+	transition: all 1s;
 }
 
 .nav-item {
@@ -62,10 +65,15 @@
 .landing {
 	margin: 20% 0 0;
 	display: flex;
+	justify-content: space-between;
 }
 
 .land-action {
-	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	height: 90%;
 	margin: 1rem 0;
 }
 
@@ -79,7 +87,7 @@
 }
 
 .pro-auth {
-	width: 35%;
+	width: 200px;
 }
 
 .pro-img {
@@ -173,7 +181,7 @@
 
 .pro-skill .skill-item {
 	padding: 1rem 0.5rem;
-	margin: 10px 10px;
+	margin: 5px 10px;
 	width: 150px;
 	border-radius: 5px;
 	text-align: center;
@@ -188,18 +196,134 @@
 	font-size: 2rem;
 }
 
+/* Projects Section styling */
+.projects {
+	margin: 6rem 0 2rem;
+	width: 100%;
+}
+
+.project-box {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.project {
+	/* border: 1px solid rgba(0, 0, 0, 0.3); */
+	box-shadow: 0 1px 3px 0 var(--shadow-color);
+	width: 250px;
+	height: 300px;
+	position: relative;
+	border-radius: 5px;
+	margin: 5px 0;
+	overflow: hidden;
+}
+
+.project .img-box {
+	height: 300px;
+	/* background: linear-gradient(-135deg, #f1f1f1 0%, #bcbabe 100%); */
+}
+
+.img-box img {
+	position: absolute;
+	height: 240px;
+	top: -100%;
+	transition: all 0.5s;
+}
+
+.project-detail {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	padding: 1rem 5px;
+	z-index: 50;
+	background: var(--dark-color);
+	text-align: center;
+	opacity: 0.8;
+	display: flex;
+	color: var(--light-color);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+}
+
+.pro-name {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.project:hover .project-detail {
+	bottom: 0;
+}
+
+.project:hover .img-box img {
+	top: 0;
+}
+
+/* projects Contacts */
+.contacts {
+	margin: 6rem 0 2rem;
+}
+
+.contact-detail {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts .contact-text {
+	width: 50%;
+}
+
+.contact-form {
+	width: 50%;
+}
+
+i.fas.fa-star,
+i.fas.fa-star-half {
+	font-size: 8px;
+	color: var(--light-color);
+}
+
+i.fas.fa-star.full {
+	font-size: 14px;
+	color: goldenrod;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+	.x-large {
+		font-size: 32px;
+	}
 	.main-nav {
 		flex-direction: column;
 	}
 
+	/* Nav Media Query */
+	.nav-link {
+		margin-left: -500%;
+	}
+
+	.main-nav:hover .nav-link {
+		margin-left: 0;
+		width: 100%;
+	}
+
 	.landing {
 		margin: 50% 0 0;
+		flex-direction: column-reverse;
+		text-align: center;
 	}
 
 	.profile {
-		margin: 50% 0 2rem;
+		margin: 60% 0 2rem;
 		flex-direction: column;
 	}
 
@@ -212,15 +336,14 @@
 		width: 100px;
 	}
 
-	.pro-skill .skill-item i {
+	.pro-skill .skill-item .skill-logo i {
 		font-size: 2rem;
 	}
 
-	.skill-detail h6 {
+	/* .skill-detail h6 {
 		display: none;
-	}
+	} */
 
-	.nav-link,
 	.logo-bar,
 	.land-action,
 	.pro-auth,
@@ -248,10 +371,54 @@
 	.timeline-text {
 		margin-top: 1rem;
 	}
+
+	/* Projects media */
+	.projects {
+		margin: 60% 0 2rem;
+	}
+
+	.project {
+		width: 200px;
+		height: 250px;
+	}
+
+	.project .img-box {
+		height: 250px;
+	}
+
+	.img-box img {
+		height: 210px;
+		top: -100%;
+		transition: all 0.5s;
+	}
+
+	.project-detail {
+		height: 50px;
+	}
+
+	.project:hover .project-detail {
+		bottom: 0;
+	}
+
+	.project:hover .img-box img {
+		top: 0;
+	}
+
+	.contact-form,
+	.contacts .contact-text {
+		width: 100%;
+	}
+	.contact-detail {
+		flex-direction: column;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 250px) {
+	.landing {
+		margin: 60% 0 0;
+		flex-direction: column-reverse;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
