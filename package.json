@@ -1,15 +1,19 @@
 {
-  "name": "matrix",
-  "version": "1.0.0",
-  "description": "Portfolio React site Template",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Portfolio",
-    "template"
-  ],
-  "author": "Okolosio Oghenemaro",
-  "license": "ISC"
+	"name": "matrix",
+	"version": "1.0.0",
+	"description": "Portfolio React site Template",
+	"homepage": "https://omarookolosio94.github.io/ariere",
+	"main": "index.js",
+	"scripts": {
+		"deploy": "gh-pages -d dist"
+	},
+	"keywords": [
+		"Portfolio",
+		"template"
+	],
+	"author": "Okolosio Oghenemaro",
+	"license": "ISC",
+	"dependencies": {
+		"gh-pages": "^2.2.0"
+	}
 }
