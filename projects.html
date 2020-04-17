@@ -13,351 +13,363 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- Top Navigation -->
-    <header class="fixed-top">
-      <div class="container">
-        <div class="main-nav">
-          <!-- Logo Bar -->
-          <div class="logo-bar">
-            <div class="logo">
-              <img src="./img/Maro.JPG" alt="" className="openProfile" />
-            </div>
-            <div class="logo-link">
-              <a
-                href="mailto: omarookolosio94@gmail.com"
-                target="_blank"
-                class="logo-item"
-                rel="noopener noreferrer"
-              >
-                <i class="fal fa-envelope"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/oghenemaro-okolosio-24653512a"
-                target="_blank"
-                class="logo-item"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="https://instagram.com/okolosio_oghenemaro"
-                target="_blank"
-                class="logo-item"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://github.com/omarookolosio94"
-                target="_blank"
-                class="logo-item"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <!-- End of Logo Bar -->
-
-          <!-- NavBar -->
-          <nav class="nav-link">
-            <a href="index.html" class="nav-item">
-              <i class="fal fa-home text-bold"></i>
-              <span>Home</span>
-            </a>
-
-            <a href="skills.html" class="nav-item">
-              <i class="fal fa-tools text-bold"></i>
-              <span>Skills</span>
-            </a>
-            <a href="projects.html" class="nav-item active">
-              <i class="fal fa-tasks text-bold"></i>
-              <span>Projects</span>
-            </a>
-            <a href="contact.html" class="nav-item">
-              <i class="fal fa-phone text-bold"></i>
-              <span>Contact</span>
-            </a>
-          </nav>
-          <!-- End of NavBar -->
-        </div>
-      </div>
-    </header>
-    <!-- End of Top Navigation -->
-
-    <!-- Start of Projects -->
-    <div class="container">
-      <div class="projects">
-        <h4 class="x-large text-light">Projects</h4>
-        <div class="skill-text">
-          <p class="my-1 text-small">
-            Check out some of my projects built using various web languages.
-            Projects are designed based on clients specification. All my works
-            are responsive and mobile-friendly. To learn more about a project
-            double-click/tab on it.
-          </p>
-        </div>
-        <div class="project-box my-2">
-          <!-- Project Item -->
-          <div class="project" onclick="openModal('airview')">
-            <div class="img-box">
-              <!-- <img src="./img/airview_cover.jpg" alt="airview projects" /> -->
-              <div class="pro-name text-center">
-                <div class="text-large text-bold my">
-                  airview
-                </div>
-                <small>designed with</small>
-                <div class="pro-tech">
-                  <i class="fab fa-react mr"></i>
-                  <i class="fab fa-node mr"></i>
-                  <i class="fab fa-git"></i>
-                </div>
-              </div>
-            </div>
-            <div class="project-detail">
-              <div class="project-action my text-small">
-                <small class="text-capitalize text-bold"
-                  >React based blog application with CRUD functionality.</small
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Item -->
-          <div class="project my-2" onclick="openModal('ariere')">
-            <div class="img-box">
-              <div class="pro-name text-center">
-                <div class="text-large text-bold my">
-                  Ariere
-                </div>
-                <small>designed with</small>
-                <div class="pro-tech">
-                  <i class="fab fa-html5 mr"></i>
-                  <i class="fab fa-sass mr"></i>
-                  <i class="fab fa-js mr"></i>
-                </div>
-              </div>
-            </div>
-            <div class="project-detail">
-              <div class="project-action my text-small">
-                <small class="text-capitalize text-bold"
-                  >Publication website design template.</small
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Item -->
-          <div class="project my-2" onclick="openModal('blospot')">
-            <div class="img-box">
-              <div class="pro-name text-center">
-                <div class="text-large text-bold my">
-                  BlogSpot
-                </div>
-                <small>designed with</small>
-                <div class="pro-tech">
-                  <i class="fab fa-node mr"></i>
-                  <i class="fab fa-git mr"></i>
-                  <i class="fab fa-css3 mr"></i>
-                </div>
-              </div>
-            </div>
-            <div class="project-detail">
-              <div class="project-action my text-small">
-                <small class="text-capitalize text-bold"
-                  >Node Express application with MongoDB database setup.</small
-                >
-              </div>
-            </div>
-          </div>
-          <!-- Project Item -->
-          <div class="project my-2" onclick="openModal('dapskic')">
-            <div class="img-box">
-              <!-- <img src="./img/airview_cover.jpg" alt="airview projects" /> -->
-              <div class="pro-name text-center">
-                <div class="text-large text-bold my">
-                  Dapskic Construction
-                </div>
-                <small>designed with</small>
-                <div class="pro-tech">
-                  <i class="fab fa-css3 mr"></i>
-                  <i class="fab fa-html5 mr"></i>
-                </div>
-              </div>
-            </div>
-            <div class="project-detail">
-              <div class="project-action my text-small">
-                <small class="text-capitalize text-bold"
-                  >Responsive Single page web design template for Construction
-                </small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="loader loader--active">
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
+      <div class="loader__tile"></div>
     </div>
-    <!-- End of Projects -->
 
-    <!-- The Modal -->
-    <div id="airview" class="modal">
+    <div class="wrapper">
+      <!-- Top Navigation -->
+      <header class="fixed-top">
+        <div class="container">
+          <div class="main-nav">
+            <!-- Logo Bar -->
+            <div class="logo-bar">
+              <div class="logo">
+                <img src="./img/Maro.JPG" alt="" className="openProfile" />
+              </div>
+              <div class="logo-link">
+                <a
+                  href="mailto: omarookolosio94@gmail.com"
+                  target="_blank"
+                  class="logo-item"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fal fa-envelope"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/oghenemaro-okolosio-24653512a"
+                  target="_blank"
+                  class="logo-item"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://instagram.com/okolosio_oghenemaro"
+                  target="_blank"
+                  class="logo-item"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://github.com/omarookolosio94"
+                  target="_blank"
+                  class="logo-item"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End of Logo Bar -->
+
+            <!-- NavBar -->
+            <nav class="nav-link">
+              <a href="index.html" class="nav-item">
+                <i class="fal fa-home text-bold"></i>
+                <span>Home</span>
+              </a>
+
+              <a href="skills.html" class="nav-item">
+                <i class="fal fa-tools text-bold"></i>
+                <span>Skills</span>
+              </a>
+              <a href="projects.html" class="nav-item active">
+                <i class="fal fa-tasks text-bold"></i>
+                <span>Projects</span>
+              </a>
+              <a href="contact.html" class="nav-item">
+                <i class="fal fa-phone text-bold"></i>
+                <span>Contact</span>
+              </a>
+            </nav>
+            <!-- End of NavBar -->
+          </div>
+        </div>
+      </header>
+      <!-- End of Top Navigation -->
+
+      <!-- Start of Projects -->
       <div class="container">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <i class="fal fa-times closeModal"></i>
-
-          <div class="modal-detail text-center">
-            <h4 class="x-large">airview</h4>
-            <p class="modal-text">
-              Airview is a web service dedicated to delivering efficient and
-              fast publication of written works. It is a MERN application that
-              gives users access to create profiles write articles as well as
-              add comments. It also gives users access to update existing
-              profiles or written articles.
+        <div class="projects">
+          <h4 class="x-large text-light">Projects</h4>
+          <div class="skill-text">
+            <p class="my-1 text-small">
+              Check out some of my projects built using various web languages.
+              Projects are designed based on clients specification. All my works
+              are responsive and mobile-friendly. To learn more about a project
+              double-click/tab on it.
             </p>
-
-            <p class="text-bold my-2">Features</p>
-            <ul class="feature text-capitalize text-center">
-              <li>CMS application</li>
-              <li>mobile-friendly</li>
-              <li>CRUD functionality</li>
-              <li>Authentication</li>
-            </ul>
           </div>
-
-          <div class="modal-link text-center my-2">
-            <a
-              class="text-normal text-bold"
-              href="https://bit.ly/3bQW4fe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fal fa-link mr"></i> Visit Live
-            </a>
+          <div class="project-box my-2">
+            <!-- Project Item -->
+            <div class="project" onclick="openModal('airview')">
+              <div class="img-box">
+                <!-- <img src="./img/airview_cover.jpg" alt="airview projects" /> -->
+                <div class="pro-name text-center">
+                  <div class="text-large text-bold my">
+                    airview
+                  </div>
+                  <small>designed with</small>
+                  <div class="pro-tech">
+                    <i class="fab fa-react mr"></i>
+                    <i class="fab fa-node mr"></i>
+                    <i class="fab fa-git"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-detail">
+                <div class="project-action my text-small">
+                  <small class="text-capitalize text-bold"
+                    >React based blog application with CRUD
+                    functionality.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project Item -->
+            <div class="project my-2" onclick="openModal('ariere')">
+              <div class="img-box">
+                <div class="pro-name text-center">
+                  <div class="text-large text-bold my">
+                    Ariere
+                  </div>
+                  <small>designed with</small>
+                  <div class="pro-tech">
+                    <i class="fab fa-html5 mr"></i>
+                    <i class="fab fa-sass mr"></i>
+                    <i class="fab fa-js mr"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-detail">
+                <div class="project-action my text-small">
+                  <small class="text-capitalize text-bold"
+                    >Publication website design template.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project Item -->
+            <div class="project my-2" onclick="openModal('blospot')">
+              <div class="img-box">
+                <div class="pro-name text-center">
+                  <div class="text-large text-bold my">
+                    BlogSpot
+                  </div>
+                  <small>designed with</small>
+                  <div class="pro-tech">
+                    <i class="fab fa-node mr"></i>
+                    <i class="fab fa-git mr"></i>
+                    <i class="fab fa-css3 mr"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-detail">
+                <div class="project-action my text-small">
+                  <small class="text-capitalize text-bold"
+                    >Node Express application with MongoDB database
+                    setup.</small
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project Item -->
+            <div class="project my-2" onclick="openModal('dapskic')">
+              <div class="img-box">
+                <!-- <img src="./img/airview_cover.jpg" alt="airview projects" /> -->
+                <div class="pro-name text-center">
+                  <div class="text-large text-bold my">
+                    Dapskic Construction
+                  </div>
+                  <small>designed with</small>
+                  <div class="pro-tech">
+                    <i class="fab fa-css3 mr"></i>
+                    <i class="fab fa-html5 mr"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="project-detail">
+                <div class="project-action my text-small">
+                  <small class="text-capitalize text-bold"
+                    >Responsive Single page web design template for Construction
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <!-- End of Projects -->
 
-          <!-- <div class="modal-gallery">
+      <!-- The Modal -->
+      <div id="airview" class="modal">
+        <div class="container">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <i class="fal fa-times closeModal"></i>
+
+            <div class="modal-detail text-center">
+              <h4 class="x-large">airview</h4>
+              <p class="modal-text">
+                Airview is a web service dedicated to delivering efficient and
+                fast publication of written works. It is a MERN application that
+                gives users access to create profiles write articles as well as
+                add comments. It also gives users access to update existing
+                profiles or written articles.
+              </p>
+
+              <p class="text-bold my-2">Features</p>
+              <ul class="feature text-capitalize text-center">
+                <li>CMS application</li>
+                <li>mobile-friendly</li>
+                <li>CRUD functionality</li>
+                <li>Authentication</li>
+              </ul>
+            </div>
+
+            <div class="modal-link text-center my-2">
+              <a
+                class="text-normal text-bold"
+                href="https://bit.ly/3bQW4fe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fal fa-link mr"></i> Visit Live
+              </a>
+            </div>
+
+            <!-- <div class="modal-gallery">
             <div class="modal-img-box">
               <img src="" class="modal-img" alt="" />
             </div>
           </div>
            -->
+          </div>
         </div>
       </div>
-    </div>
-    <div id="ariere" class="modal">
-      <div class="container">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <i class="fal fa-times closeModal"></i>
+      <div id="ariere" class="modal">
+        <div class="container">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <i class="fal fa-times closeModal"></i>
 
-          <div class="modal-detail text-center">
-            <h4 class="x-large">Ariere</h4>
-            <p class="modal-text">
-              Website template for a publication company. Responsive,
-              mobile-friendly DRY design. Built using Basic Language; HTML, SASS
-              and Vanilla JS.
-            </p>
+            <div class="modal-detail text-center">
+              <h4 class="x-large">Ariere</h4>
+              <p class="modal-text">
+                Website template for a publication company. Responsive,
+                mobile-friendly DRY design. Built using Basic Language; HTML,
+                SASS and Vanilla JS.
+              </p>
 
-            <p class="text-bold my-2">Features</p>
-            <ul class="feature text-capitalize text-center">
-              <li>Responsive</li>
-              <li>mobile-friendly</li>
-              <li>DRY</li>
-            </ul>
-          </div>
+              <p class="text-bold my-2">Features</p>
+              <ul class="feature text-capitalize text-center">
+                <li>Responsive</li>
+                <li>mobile-friendly</li>
+                <li>DRY</li>
+              </ul>
+            </div>
 
-          <div class="modal-link text-center my-2">
-            <a
-              class="text-normal text-bold"
-              href="https://bit.ly/38F5NDB"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fal fa-link mr"></i> Visit Live
-            </a>
-          </div>
+            <div class="modal-link text-center my-2">
+              <a
+                class="text-normal text-bold"
+                href="https://bit.ly/38F5NDB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fal fa-link mr"></i> Visit Live
+              </a>
+            </div>
 
-          <!-- <div class="modal-gallery">
+            <!-- <div class="modal-gallery">
             <div class="modal-img-box">
               <img src="" class="modal-img" alt="" />
             </div>
           </div>
            -->
+          </div>
         </div>
       </div>
-    </div>
-    <div id="blospot" class="modal">
-      <div class="container">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <i class="fal fa-times closeModal"></i>
+      <div id="blospot" class="modal">
+        <div class="container">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <i class="fal fa-times closeModal"></i>
 
-          <div class="modal-detail text-center">
-            <h4 class="x-large">Blogspot</h4>
-            <p class="modal-text">
-              Blospot is a blog application. Built using NODE and Express.
-              Responsive design with CRUD functionality.
-            </p>
+            <div class="modal-detail text-center">
+              <h4 class="x-large">Blogspot</h4>
+              <p class="modal-text">
+                Blospot is a blog application. Built using NODE and Express.
+                Responsive design with CRUD functionality.
+              </p>
 
-            <p class="text-bold my-2">Features</p>
-            <ul class="feature text-capitalize text-center">
-              <li>Responsive</li>
-              <li>CRUD functionality</li>
-              <li>CMS applicaton</li>
-            </ul>
-          </div>
+              <p class="text-bold my-2">Features</p>
+              <ul class="feature text-capitalize text-center">
+                <li>Responsive</li>
+                <li>CRUD functionality</li>
+                <li>CMS applicaton</li>
+              </ul>
+            </div>
 
-          <div class="modal-link text-center my-2">
-            <a
-              class="text-normal text-bold"
-              href="https://blospot.herokuapp.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fal fa-link mr"></i> Visit Live
-            </a>
-          </div>
+            <div class="modal-link text-center my-2">
+              <a
+                class="text-normal text-bold"
+                href="https://blospot.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fal fa-link mr"></i> Visit Live
+              </a>
+            </div>
 
-          <!-- <div class="modal-gallery">
+            <!-- <div class="modal-gallery">
             <div class="modal-img-box">
               <img src="" class="modal-img" alt="" />
             </div>
           </div>
            -->
+          </div>
         </div>
       </div>
-    </div>
-    <div id="dapskic" class="modal">
-      <div class="container">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <i class="fal fa-times closeModal"></i>
+      <div id="dapskic" class="modal">
+        <div class="container">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <i class="fal fa-times closeModal"></i>
 
-          <div class="modal-detail text-center">
-            <h4 class="x-large">Dapskic</h4>
-            <p class="modal-text">
-              Website template for a construction company. Built entirely using
-              HTML and JS. Responsive, mobile-friendly , Single page design.
-            </p>
+            <div class="modal-detail text-center">
+              <h4 class="x-large">Dapskic</h4>
+              <p class="modal-text">
+                Website template for a construction company. Built entirely
+                using HTML and JS. Responsive, mobile-friendly , Single page
+                design.
+              </p>
 
-            <p class="text-bold my-2">Features</p>
-            <ul class="feature text-capitalize text-center">
-              <li>Single-page</li>
-              <li>mobile-friendly</li>
-              <li>Responsive</li>
-            </ul>
-          </div>
+              <p class="text-bold my-2">Features</p>
+              <ul class="feature text-capitalize text-center">
+                <li>Single-page</li>
+                <li>mobile-friendly</li>
+                <li>Responsive</li>
+              </ul>
+            </div>
 
-          <div class="modal-link text-center my-2">
-            <a
-              class="text-normal text-bold"
-              href="https://bit.ly/2SxCYTF"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fal fa-link mr"></i> Visit Live
-            </a>
-          </div>
+            <div class="modal-link text-center my-2">
+              <a
+                class="text-normal text-bold"
+                href="https://bit.ly/2SxCYTF"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fal fa-link mr"></i> Visit Live
+              </a>
+            </div>
 
-          <!-- <div class="modal-gallery">
+            <!-- <div class="modal-gallery">
             <div class="modal-img-box">
               <img src="./img/airviewSignin.png" class="modal-img" alt="" />
               <img src="./img/airview_login.png" class="modal-img" alt="" />
@@ -368,6 +380,7 @@
             </div>
           </div>
            -->
+          </div>
         </div>
       </div>
     </div>
