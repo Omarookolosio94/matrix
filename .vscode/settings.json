@@ -5,5 +5,8 @@
   "emmet.includeLanguages": {
     "javascript": "html"
   },
-  "auto-rename-tag.activationOnLanguage": ["html"]
+  "auto-rename-tag.activationOnLanguage": [
+    "html"
+  ],
+  "liveServer.settings.port": 5501
 }

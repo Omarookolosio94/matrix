@@ -1,6 +1,7 @@
 /* Global Styles */
 :root {
   --primary-color: #111;
+  /* --secondary-color: rgba(0, 134, 185, 0.8); */
   --secondary-color: #0086b9;
   --dark-color: #111;
   --light-color: #fff;
@@ -8,6 +9,7 @@
   --success-color: #28a745;
   --shadow-color: rgba(0, 0, 0, 0.3);
   --golden-color: rgb(255, 237, 133);
+  --contrast-color: #0e0506;
 }
 
 * {
@@ -22,6 +24,7 @@ body {
   line-height: 1.6;
   background-color: var(--secondary-color);
   color: var(--dark-color);
+  overflow-x: hidden;
 }
 
 /* Font-size */
@@ -66,7 +69,20 @@ img {
 }
 
 /* Utilities */
+.trans-box {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  animation: expand 0.8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  transition: all 0.8s ease;
+  z-index: 2;
+}
+
 .container {
+  z-index: 1;
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
