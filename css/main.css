@@ -189,10 +189,8 @@
   width: 50%;
 }
 
-.pro-skills.skill-text p {
+.skill-text p {
   transform: translateY(600px);
-  /* animation: slideUp 0.8s ease-in-out forwards 0.8s;
-   */
   animation: expand 1.4s ease forwards;
 }
 
@@ -235,6 +233,8 @@
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  transform: translateY(600px);
+  animation: slideUp 0.8s ease forwards 0.5s;
 }
 
 .project {
@@ -302,6 +302,10 @@
   margin: 6rem 0 2rem;
 }
 
+.contacts h4 {
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
 .contact-detail {
   display: flex;
   justify-content: space-between;
@@ -309,10 +313,13 @@
 
 .contacts .contact-text {
   width: 40%;
+  transform: translateY(600px);
+  animation: slideUp 0.7s ease-in-out forwards 0.7s;
 }
 
 .contact-form {
   width: 50%;
+  animation: slideIn 1.5s ease-in-out forwards;
 }
 
 .contact-form .form {
@@ -725,8 +732,8 @@ i.fal.fa-star.full {
   width: 0;
   height: 20%;
   background-color: var(--contrast-color);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   -webkit-transition: width 0.7s ease;
   transition: width 0.7s ease;
 }
@@ -741,30 +748,35 @@ i.fal.fa-star.full {
   top: calc(0 * 20%);
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+  background: url('../img/blank.png') no-repeat;
 }
 
 .loader .loader__tile:nth-child(2) {
   top: calc(1 * 20%);
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  background: url('../img/codingstat.png') no-repeat;
 }
 
 .loader .loader__tile:nth-child(3) {
   top: calc(2 * 20%);
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
+  background: url('../img/THOUGHTS.png') no-repeat;
 }
 
 .loader .loader__tile:nth-child(4) {
   top: calc(3 * 20%);
   -webkit-transition-delay: 0.6s;
   transition-delay: 0.6s;
+  background: url('../img/ALIVE.png') no-repeat;
 }
 
 .loader .loader__tile:nth-child(5) {
   top: calc(4 * 20%);
   -webkit-transition-delay: 0.8s;
   transition-delay: 0.8s;
+  background: url('../img/blank.png') no-repeat;
 }
 
 .loader--active {

@@ -78,6 +78,7 @@ img {
   background-color: var(--secondary-color);
   position: relative;
   transition: all 0.8s ease;
+  overflow-x: hidden;
   z-index: 2;
 }
 
