@@ -126,56 +126,6 @@
   width: 80%;
 }
 
-.pro-timeline {
-  padding: 0.5rem;
-  margin: 1rem 0;
-  position: relative;
-  width: 90%;
-}
-
-.pro-timeline::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 1px;
-  box-shadow: 1px 2px 5px var(--primary-color);
-  top: 0;
-  left: 1rem;
-  z-index: -1;
-}
-.timeline {
-  padding: 1rem 0;
-  margin: 1rem 0;
-}
-
-.timeline-box {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1.5rem;
-}
-.timeline-bullet {
-  content: '';
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  box-shadow: 1px 2px 5px var(--primary-color);
-  background-color: var(--secondary-color);
-  z-index: 1;
-}
-
-.timeline-icon {
-  width: 30%;
-}
-
-.timeline-text {
-  width: 70%;
-}
-
-.timeline-icon i {
-  font-size: 20px;
-}
-
 /* Skills styling */
 .pro-skills {
   margin: 5rem 0 2rem;
