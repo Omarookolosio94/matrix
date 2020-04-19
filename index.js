@@ -23,6 +23,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   var navLink = document.getElementsByClassName('nav-link');
+  if ($trans) {
+    $trans.classList.add('noanimate');
+  }
   if (prevScrollpos > currentScrollPos) {
     navLink[0].classList.add('show');
   } else {
@@ -34,9 +37,14 @@ window.onscroll = function () {
 
 //SVG Loader
 var $loader = document.querySelector('.loader');
+var $trans = document.querySelector('.trans-box');
 
 window.onload = function () {
-  $loader.classList.remove('loader--active');
+  if ($loader) {
+    $loader.classList.remove('loader--active');
+  } else {
+    return null;
+  }
 };
 
 // document.querySelector('.btn').addEventListener('click', function () {
