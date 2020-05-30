@@ -20,7 +20,7 @@
   border-radius: 5px;
   padding: 5px 0.4rem;
   box-shadow: 0px 1px 3px 0px var(--shadow-color);
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 .logo,
@@ -36,7 +36,7 @@
 }
 
 .nav-link {
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   box-shadow: 0px 1px 3px 0px var(--shadow-color);
   margin: 5px 0;
   border-radius: 5px;
@@ -330,7 +330,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid var(--shadow-color);
@@ -372,7 +372,7 @@
 
 .contact-form input.form-field__input:focus ~ .form-field__bar,
 .contact-form textarea.form-field__textarea:focus ~ .form-field__bar {
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   border-bottom: 2px solid var(--light-color);
   -webkit-transform: scaleX(150);
   transform: scaleX(150);
@@ -399,7 +399,7 @@
 /* Modal Content/Box */
 .modal-content {
   position: relative;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   margin: 15% auto;
   padding: 20px;
   color: var(--dark-color);
@@ -459,11 +459,13 @@ i.fal.fa-star,
 i.fal.fa-star-half {
   font-size: 12px;
   color: var(--light-color);
+  display: none;
 }
 
 i.fal.fa-star.full {
   font-size: 14px;
   color: goldenrod;
+  display: none;
 }
 
 /* Small devices (landscape phones, 576px and up) */
